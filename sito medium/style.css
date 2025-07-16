@@ -1,0 +1,95 @@
+
+header {
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid #d5c4c44b; 
+}
+.NavBar {
+  
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.navLogo {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 2rem;     
+}
+
+.logo {
+  width: 180px;
+  height: auto;
+}
+
+.nav-icons {
+  margin-left: auto;  
+  display: flex;
+  align-items: center;
+  gap: 2rem;    
+ margin-right: 60px;    
+}
+
+.icon {
+  width: 20px;
+  height: auto;
+}
+
+.btn-resume {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35em 1em;
+  font-size: 14px;
+  line-height: 1.2;
+  border: 1px solid currentColor;
+  border-radius: 100px;
+  background: transparent; 
+  white-space: nowrap;
+  flex: 0 0 auto;
+  cursor: pointer;
+}
+
+.btn-round {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;          
+  height: 32px;
+  font-size: 16px;
+  line-height: 1;
+  border: 1px solid currentColor;
+  background-color: rgb(251, 106, 39);
+  border-radius: 100px;  
+  cursor: pointer;
+  flex: 0 0 auto;
+  padding: 0;   
+  color:white;           
+}
+
+section {
+
+  padding: 3rem;
+  display:flex;
+  flex-direction: raw;
+  gap: 3rem;
+  margin-left: 50px;  
+  border-top: 1px solid #b7b5b551; 
+margin-bottom: -50px;;
+}
+
+.link {
+  font-size: 16px;
+  border: none;
+  padding: 25px;
+  cursor: pointer;
+  color: rgba(18, 17, 17, 0.6);
+  background-color: transparent;
+   height: 32px;
+
+}
+
+.feed {
+  display: block;
+}
