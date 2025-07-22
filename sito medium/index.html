@@ -1,65 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Medium Style Homepage</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-<div class="NavBar">
-  <nav class="navLogo">
-    <img src="icone/icona medium.svg" alt="Medium Logo" class="logo">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Medium</title>
 
-    <div class="nav-icons">
-      <img src="icone/search.png" alt="Search" class="icon">
-      <img src="icone/bookmark.svg" alt="Bookmark" class="icon">
-      <img src="icone/notification.png" alt="Notifications" class="icon">
-      <button class="btn-resume">Resume Membership</button>
-      <button class="btn-round">T</button>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav class="top-nav">
+    <div class="nav-inner">
+      <a href="#" class="logo-link">
+        <img src="icone/icona medium.svg"
+             alt="Medium logo" class="logo-img" />
+      </a>
+
+      <div class="icon-group">
+  <button class="icon-btn">
+    <img src="icone/search.png" alt="Cerca" class="icon-img">
+  </button>
+
+  <button class="icon-btn">
+    <img src="icone/bookmark.svg" alt="Segnalibri" class="icon-img">
+  </button>
+
+  <button class="icon-btn">
+    <img src="icone/notification.png" alt="Notifiche" class="icon-img">
+  </button>
+</div>
+
+  
+      <button class="btn btn-outline">Resume membership</button>
+      <button class="btn btn-orange">T</button>
     </div>
   </nav>
-</div>
-    </header>
-    <main>
- <section class="section1">
-  <button class="link">FOLLOWING</button>
-  <button class="link">RECOMMENDED FOR YOU</button>
- </section>
-        <section>
-            <div class="feed">
 
-              <div class="feed-item">
-    <div class="feed-item-left">
-      <div class="feed-item-header">
-        <img class="miniICON" src="icone/ali.png" alt="Avatar autore 1">
-        <span>Mario Rossi</span>
-      </div>
-      <p class="feed-item-paragraph">Gestire lo stato in applicazioni React complesse senza impazzire.</p>
-      <h3 class="feed-item-title">State Management Moderno in React</h3>
-      <p class="feed-item-subtitle">Redux Toolkit, Zustand e Context a confronto.<br>Quale scegliere nel 2025?</p>
-      <div class="feed-item-footer">
-        <div class="feed-item-tags">
-          <button class="feed-item-tag-btn">React</button>
-          <button class="feed-item-tag-btn">Redux</button>
-          <button class="feed-item-tag-btn">Frontend</button>
-          <button class="feed-item-tag-btn">Best Practices</button>
+  <main class="main">
+    <div class="main-inner">
+      <section class="feed">
+        <div class="feed-tabs">
+          <a href="#" class="tab active">Following</a>
+          <a href="#" class="tab">Recommended for you</a>
         </div>
-        <div class="feed-item-actions">
-          <button class="feed-item-action-btn" aria-label="Salva"><img src="icone/bookmark.svg" alt=""></button>
-          <button class="feed-item-action-btn" aria-label="Altro"><img src="icone/more.svg" alt=""></button>
-        </div>
-      </div>
-    </div>
-    <div class="feed-item-image-wrapper">
-      <img class="feed-item-image" src="https://picsum.photos/seed/img1/400/240" alt="Immagine articolo 1">
-    </div>
-  </div>
+
+        <article class="post-card">
+          <div class="post-text">
+            <small class="post-author">Kolby Sisk in Udacity Eng &amp;  Data</small>
+            <h2 class="post-title">
+              React state management in 2022 — Return of the Redux
+            </h2>
+            <p class="post-desc">
+              At the beginning of the year if you told me I'd be publishing a
+              recommendation to use Redux I would have laughed in your face…
+            </p>
+            <div class="post-meta">
+              <span>Dec 3</span> · <span>4 min read</span> ·
+              <span class="post-tag">React</span>
             </div>
-        </section>
-    </main>
-    <footer>
-    </footer>
+          </div>
+
+          <img src="foto/dirigenti.png" alt="Post thumbnail" class="post-img"/>
+        </article>
+
+      
+        <article class="post-card">
+          <div class="post-text">
+            <small class="post-author">Navoda Nilakshi</small>
+            <h2 class="post-title">
+              How to Sanitise Your Express App Against MongoDB Injection
+            </h2>
+            <p class="post-desc">
+              Easiest way to sanitise your express app.
+            </p>
+            <div class="post-meta">
+              <span>Dec 19</span> · <span>6 min read</span> ·
+              <span class="post-tag">Web Development</span>
+            </div>
+          </div>
+          <img src="foto/bosco.png" alt="Post thumbnail" class="post-img" />
+        </article>
+
+        <article class="post-card">
+          <div class="post-text">
+            <small class="post-author">Divyesh Bhalani in DhiWise</small>
+            <h2 class="post-title">React 18 new features and updates</h2>
+            <p class="post-desc">Know about some cool features of React 18.</p>
+            <div class="post-meta">
+              <span>Nov 24</span> · <span>4 min read</span> ·
+              <span class="post-tag">Reactjs</span>
+            </div>
+          </div>
+          <img src="foto/teach.jpg" alt="Post thumbnail" class="post-img"
+          />
+        </article>
+      </section>
+
+      <aside class="sidebar">
+        <div class="twitter-box">
+          <img
+            src="icone/twitter.png" alt="twitter logo"class="twitter-logo"/>
+          <p class="twitter-text">
+            Discover Medium writers you already follow on Twitter.
+          </p>
+          <button class="btn btn-outline">Connect to Twitter</button>
+        </div>
+
+        <div class="sidebar-block">
+          <h3 class="sidebar-title">Recommended topics</h3>
+          <div class="topic-tags">
+            <span class="badge">Technology</span>
+            <span class="badge">Money</span>
+            <span class="badge">Business</span>
+            <span class="badge">Productivity</span>
+            <span class="badge">Psychology</span>
+            <span class="badge">Mindfulness</span>
+            <span class="badge">Art</span>
+          </div>
+        </div>
+
+        <div class="sidebar-block">
+          <h3 class="sidebar-title">Who to follow</h3>
+
+          <div class="follow-row">
+            <img src="icone/Lili.png" alt="avatar" />
+            <div class="follow-info">
+              <span class="follow-name">Lessig</span>
+              <small class="follow-desc">law professor, activist</small>
+            </div>
+            <button class="btn btn-sm btn-outline">Follow</button>
+          </div>
+
+          <div class="follow-row">
+            <img src="icone/gine.png" alt="avatar" />
+            <div class="follow-info">
+              <span class="follow-name">David Wineberg</span>
+              <small class="follow-desc">Author</small>
+            </div>
+            <button class="btn btn-sm btn-outline">Follow</button>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
 </body>
 </html>
